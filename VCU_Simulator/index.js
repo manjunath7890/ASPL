@@ -49,24 +49,72 @@ client.on('error', (err) => {
   console.error('MQTT Connection Error:', err);
 });
 
-// Generate realistic dummy data matching our app's data schema
+// Generate realistic dummy data matching our app's full data schema (v1 to v73)
 const generateTelemetry = () => {
   return {
     user: TARGET_VEHICLE,
     v1: (Math.random() * 10 + 70).toFixed(2), // Latitude (dummy)
     v2: (Math.random() * 10 + 70).toFixed(2), // Longitude
     v3: (Math.random() * 50 + 20).toFixed(1), // Speed
-    v4: Math.floor(Math.random() * 100).toString(),
-    v5: Math.floor(Math.random() * 100).toString(),
-    v6: Date.now().toString(), // Crucial: Random changing v6 for heartbeat fallback
-    v7: (Math.random() > 0.95 ? 10 : 0).toString(), // Occasional Level 4 fault
-    v8: (Math.random() > 0.98 ? 1 : 0).toString(),  // Occasional Level 5 fault
-    v32: Math.floor(Math.random() * 100).toString(), // SOC (Battery %)
-    v41: Math.floor(Math.random() * 50000).toString(), // Odometer
-    v42: ["0", "1", "2", "3"][Math.floor(Math.random() * 4)], // Mode (0=Parked, 1,2=Charging, 3=Motion)
-    v44: (Math.random() > 0.5 ? 1 : 0).toString(), // Park flag
-    v50: Math.floor(Math.random() * 30 + 35).toString(), // Controller Temp
-    v49: Math.floor(Math.random() * 40 + 40).toString(), // Motor Temp
+    v4: Math.floor(Math.random() * 100),
+    v5: Math.floor(Math.random() * 100),
+    v6: Date.now(), // Crucial: Random changing v6 for heartbeat fallback
+    v7: Math.random() > 0.95 ? 10 : 0, // Occasional Level 4 fault
+    v8: Math.random() > 0.98 ? 1 : 0,  // Occasional Level 5 fault
+    v9: Math.floor(Math.random() * 150 + 100),
+    v10: Math.floor(Math.random() * 2),
+    v11: Math.floor(Math.random() * 30 + 10),
+    v12: 0,
+    v13: Math.floor(Math.random() * 10 + 20),
+    v14: Math.floor(Math.random() * 10 + 20),
+    v15: Math.floor(Math.random() * 10 + 20),
+    v16: Math.floor(Math.random() * 10 + 20),
+    v17: (Math.random() * 0.1 + 3.25).toFixed(3),
+    v18: (Math.random() * 0.1 + 3.25).toFixed(3),
+    v19: 0,
+    v22: 223,
+    v23: Math.floor(Math.random() * 2),
+    v24: 0,
+    v32: Math.floor(Math.random() * 100), // SOC (Battery %)
+    v33: 0,
+    v34: (Math.random() * 10 + 70).toFixed(2),
+    v35: (Math.random() * 20 + 120).toFixed(2),
+    v36: 0,
+    v37: (Math.random() * 2 + 8).toFixed(3),
+    v38: 0,
+    v39: 0,
+    v40: 0,
+    v41: Math.floor(Math.random() * 50000), // Odometer
+    v42: 3, // Mode (0=Parked, 1,2=Charging, 3=Motion)
+    v44: 3,
+    v45: Math.floor(Math.random() * 10 + 20),
+    v46: Math.floor(Math.random() * 10 + 20),
+    v47: 0,
+    v49: (Math.random() * 20 + 10).toFixed(5), // Motor Temp
+    v50: (Math.random() * 20 + 60).toFixed(5), // Controller Temp
+    v51: (Math.random() * 0.1 + 3.25).toFixed(3),
+    v52: (Math.random() * 0.1 + 3.25).toFixed(3),
+    v53: (Math.random() * 0.1 + 3.25).toFixed(3),
+    v54: (Math.random() * 0.1 + 3.25).toFixed(3),
+    v55: (Math.random() * 0.1 + 3.25).toFixed(3),
+    v56: (Math.random() * 0.1 + 3.25).toFixed(3),
+    v57: (Math.random() * 0.1 + 3.25).toFixed(3),
+    v58: (Math.random() * 0.1 + 3.25).toFixed(3),
+    v59: (Math.random() * 0.1 + 3.25).toFixed(3),
+    v60: (Math.random() * 0.1 + 3.25).toFixed(3),
+    v61: (Math.random() * 0.1 + 3.25).toFixed(3),
+    v62: (Math.random() * 0.1 + 3.25).toFixed(3),
+    v63: (Math.random() * 0.1 + 3.25).toFixed(3),
+    v64: (Math.random() * 0.1 + 3.25).toFixed(3),
+    v65: (Math.random() * 0.1 + 3.25).toFixed(3),
+    v66: (Math.random() * 0.1 + 3.25).toFixed(3),
+    v67: (Math.random() * 0.1 + 3.25).toFixed(3),
+    v68: (Math.random() * 0.1 + 3.25).toFixed(3),
+    v69: (Math.random() * 0.1 + 3.25).toFixed(3),
+    v70: (Math.random() * 0.1 + 3.25).toFixed(3),
+    v71: (Math.random() * 0.1 + 3.25).toFixed(3),
+    v72: (Math.random() * 0.1 + 3.25).toFixed(3),
+    v73: (Math.random() * 0.1 + 3.25).toFixed(3),
   };
 };
 
