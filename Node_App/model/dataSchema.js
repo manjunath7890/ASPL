@@ -76,7 +76,7 @@ const dataSchema = new mongoose.Schema({
   v72: Number,
   v73: Number,
   date: {
-    type: String,   // stored as "YYYY-MM-DD" (IST)
+    type: Date,
   },
   timestamp: {
     type: Date,     // full IST datetime

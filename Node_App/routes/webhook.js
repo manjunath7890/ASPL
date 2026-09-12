@@ -90,7 +90,7 @@ router.post('/', async (req, res) => {
     const dataToInsert = {
       ...payload,
       timestamp: istTimestamp,
-      date:      getIstDateString(currentUTCDate),
+      date:      new Date(getIstDateString(currentUTCDate)),
     };
 
     console.log(`[Webhook] user=${user} v49=${payload.v49} v50=${payload.v50} ts=${istTimestamp.toISOString()}`);
