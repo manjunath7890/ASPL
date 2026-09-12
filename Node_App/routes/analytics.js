@@ -23,8 +23,13 @@ const getIstDateString = (value) => {
   return `${year}-${month}-${day}`;
 };
 
-// Schedule task to run every day at 17:30 (4:30 PM) IST
-cron.schedule('30 16 * * *', async () => {
+// Vercel Serverless Cron Endpoint — triggers every day at 23:59 IST
+router.get('/cron-daily', async (req, res) => {
+  // Optional security: Ensure request comes from Vercel by checking CRON_SECRET
+  if (process.env.CRON_SECRET && req.headers.authorization !== `Bearer ${process.env.CRON_SECRET}`) {
+    return res.status(401).json({ error: 'Unauthorized cron request' });
+  }
+
   console.log('Starting daily auto-generation of analytics for all active vehicles...');
   try {
     const todayStr = getIstDateString(new Date());
@@ -34,11 +39,13 @@ cron.schedule('30 16 * * *', async () => {
     
     if (!vehicleIds || vehicleIds.length === 0) {
       console.log('No registered vehicles found. Skipping analytics generation.');
-      return;
+      return res.status(200).json({ status: 'skipped', message: 'No vehicles found' });
     }
 
     console.log(`Found ${vehicleIds.length} registered vehicles. Processing...`);
 
+    // In a serverless environment, you might want to return 200 OK immediately and process in background,
+    // OR wait for it if it takes less than 10 seconds. Since it's a cron job, we can wait.
     for (const vehicleId of vehicleIds) {
       try {
         await generateAndStoreVehicleMetrics(vehicleId, todayStr);
@@ -48,11 +55,11 @@ cron.schedule('30 16 * * *', async () => {
       }
     }
     console.log('Daily auto-generation of analytics completed.');
+    return res.status(200).json({ status: 'success', processed: vehicleIds.length });
   } catch (error) {
     console.error('Error in daily analytics cron job:', error);
+    return res.status(500).json({ error: error.message });
   }
-}, {
-  timezone: 'Asia/Kolkata'
 });
 
 router.post('/generate', async (req, res) => {

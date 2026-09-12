@@ -11,5 +11,11 @@
   ],
   "routes": [
     { "src": "/(.*)", "dest": "index.js" }
+  ],
+  "crons": [
+    {
+      "path": "/api/analytics/cron-daily",
+      "schedule": "29 18 * * *"
+    }
   ]
 }
