@@ -1,0 +1,67 @@
+                     ALTENER – VEHICLE SPECIFICATIONS
+
+BUZZ
+• Motor: 9 kW PMSM, IP67 Sealed (all-weather)
+• Battery: 11.8 kWh LiFePO4 (LFP)
+• System Voltage: 72V
+• Range: 120–140 km (single charge)
+• Payload: 550 kg
+• Gross Weight: 1,100 kg
+• Top Speed (Eco): 30 km/h
+• Top Speed (Boost): 50 km/h
+• Drive Modes: Eco / Boost / Auto / Rev
+• Auto Mode: Smart switching between Eco and Boost
+• Transmission: 2-Speed Gearbox (Gear Ratios: 14.96 / 8.06)
+• Charging: Onboard 25A, 5–6 hrs (0–80%)
+• Battery Cycles: 2,000+
+• Display: 7.0" Colour Touch LCD
+• Cluster Features: Live speed, SoC (battery %), range, trip data, fault codes, maintenance reminders
+• Reverse Camera: Dedicated 4.3" screen (Container variant)
+• Start System: Keyless Entry + Encrypted Immobilizer
+• Connectivity: 4G LTE + GNSS (GPS)
+• OTA Updates: Yes (remote software)
+• Fleet Management: Live GPS, Geofencing, Diagnostics
+• Mobile App: Real-time battery %, range estimate, remote immobilizer, trip logs, SOS, push alerts
+• Web Portal: Live fleet map, driver scores, idle time monitoring, maintenance tracking, CSV/PDF export
+• Front Brake: Disc Brake
+• Rear Brake: Drum Brake
+• Regenerative Braking: Yes
+• Tyre Size: 10–12 inch heavy-duty
+• Front Suspension: Twin Shock Absorbers + Springs
+• Rear Suspension: Rubber Damping + Shock Absorbers
+• Chassis: High-strength steel
+• Gradeability: 26.5%
+• Hill Hold Assist: Yes
+• Cooling: Active Controller Cooling
+
+LITE
+• Motor: 6 kW PMSM, IP67 Sealed
+• Battery: 6.5 kWh LiFePO4 (LFP)
+• System Voltage: 72V
+• Range: 100–120 km (single charge)
+• Payload: 350 kg
+• Gross Weight: 1,100 kg
+• Top Speed: 45 km/h
+• Transmission: Single-Speed Automatic (no gear changing)
+• Charging: Onboard 25A, 4–5 hrs (0–80%)
+• Battery Cycles: 2,000+
+• Display: 5.0" Digital Instrument Cluster
+• Cluster Features: Live speed, SoC (battery %), range, trip data, fault codes, maintenance reminders
+• Reverse Camera: Dedicated 4.3" screen (Container variant)
+• Start System: Physical Key
+• Connectivity: 4G LTE + GNSS (GPS)
+• OTA Updates: Yes (remote software)
+• Fleet Management: Live GPS, Geofencing, Diagnostics
+• Mobile App: Real-time battery %, range estimate, remote immobilizer, trip logs, SOS, push alerts
+• Web Portal: Live fleet map, driver scores, idle time monitoring, maintenance tracking, CSV/PDF export
+• Front Brake: Drum Brake
+• Rear Brake: Drum Brake
+• Regenerative Braking: Yes
+• Tyre Size: 8 inch city-optimized
+• Front Suspension: Twin Shock Absorbers + Springs
+• Rear Suspension: Rubber Damping + Shock Absorbers
+• Chassis: High-strength steel
+• Cooling: Active Controller Cooling
+
+* Specifications are subject to change without notice.
+* Performance values are under standard test conditions.

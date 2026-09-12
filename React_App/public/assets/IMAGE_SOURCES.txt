@@ -1,0 +1,7 @@
+Background photos are from Unsplash (https://unsplash.com/license) — free to use.
+
+- bg-hero-highway.jpg — road / mobility scene
+- bg-mesh-gradient.jpg — abstract gradient
+- bg-logistics.jpg — warehouse / logistics
+
+Downloaded for offline bundling with the app.

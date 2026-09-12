@@ -1,0 +1,344 @@
+.apexcharts-tooltip {
+  font-size: 11px;
+  font-family: Arial, sans-serif;
+}
+
+.apexcharts-toolbar .apexcharts-menu {
+  background-color: #000 !important;
+}
+
+.apexcharts-toolbar .apexcharts-menu-item {
+  background-color: #fff !important;
+}
+
+.apexcharts-toolbar .apexcharts-menu-item {
+  color: #000 !important;
+}
+
+/* Vehicle Performance Dashboard Styles */
+:root {
+  --color-text-primary: #fff;
+  --color-text-secondary: #9c9a92;
+  --color-border-tertiary: rgba(255, 255, 255, 0.07);
+  --color-background-secondary: rgba(255, 255, 255, 0.1);
+  --color-background-primary: #1a1a1a;
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.adm {
+  padding: .5rem 0;
+  font-family: var(--font-sans);
+  color: var(--color-text-primary);
+}
+
+.hdr {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 14px;
+  padding-bottom: 12px;
+  border-bottom: .5px solid var(--color-border-tertiary);
+}
+
+.hdr-model {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.hdr-sub {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  margin-top: 3px;
+}
+
+.hdr-range {
+  font-size: 11px;
+  color: var(--color-text-secondary);
+  margin-top: 5px;
+}
+
+.grade-box {
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.grade-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  font-size: 22px;
+  font-weight: 500;
+  margin: 0 auto 5px;
+  background: #E6F1FB;
+  color: #185FA5;
+}
+
+.grade-score {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.grade-sub {
+  font-size: 11px;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+  margin-top: 3px;
+  max-width: 120px;
+}
+
+.sec-lbl {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  margin: 14px 0 8px;
+}
+
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.kpi {
+  background: var(--color-background-secondary);
+  border-radius: var(--border-radius-md);
+  padding: .6rem .75rem;
+}
+
+.kpi-lbl {
+  font-size: 11px;
+  color: var(--color-text-secondary);
+  margin-bottom: 3px;
+}
+
+.kpi-val {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.kpi-sub {
+  font-size: 11px;
+  color: var(--color-text-secondary);
+  margin-top: 2px;
+}
+
+.charts3 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.charts2 {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  gap: 10px;
+}
+
+.cc {
+  background: var(--color-background-primary);
+  border: .5px solid var(--color-border-tertiary);
+  border-radius: var(--border-radius-lg);
+  padding: .75rem .9rem;
+}
+
+.cc-title {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  margin-bottom: 6px;
+}
+
+.cv {
+  position: relative;
+}
+
+.leg {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 8px;
+}
+
+.li {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  color: var(--color-text-secondary);
+}
+
+.ld {
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.ll {
+  width: 14px;
+  height: 2px;
+  border-radius: 1px;
+  flex-shrink: 0;
+}
+
+.dl {
+  margin-top: 9px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.tbl-wrap {
+  background: var(--color-background-primary);
+  border: .5px solid var(--color-border-tertiary);
+  border-radius: var(--border-radius-lg);
+  overflow-x: auto;
+}
+
+table.log {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+  min-width: 580px;
+}
+
+table.log th {
+  background: var(--color-background-secondary);
+  color: var(--color-text-secondary);
+  font-weight: 500;
+  padding: 7px 10px;
+  text-align: left;
+  border-bottom: .5px solid var(--color-border-tertiary);
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+table.log td {
+  padding: 7px 10px;
+  border-bottom: .5px solid var(--color-border-tertiary);
+  white-space: nowrap;
+}
+
+.dr {
+  cursor: pointer;
+  transition: background .12s;
+}
+
+.dr:hover {
+  background: var(--color-background-secondary);
+}
+
+.dr.anm-row td {
+  color: var(--color-text-secondary);
+}
+
+.er {
+  display: none;
+}
+
+.er.open {
+  display: table-row;
+}
+
+.exp-inner {
+  padding: 10px 12px;
+  background: var(--color-background-secondary);
+  border-top: .5px solid var(--color-border-tertiary);
+}
+
+.sg {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+  gap: 8px;
+}
+
+.sc {
+  background: var(--color-background-primary);
+  border: .5px solid var(--color-border-tertiary);
+  border-radius: var(--border-radius-md);
+  padding: 8px 10px;
+}
+
+.sc-head {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  margin-bottom: 3px;
+}
+
+.sc-time {
+  font-size: 11px;
+  color: var(--color-text-secondary);
+  margin-bottom: 4px;
+}
+
+.sc-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin-top: 4px;
+  color: var(--color-text-primary);
+}
+
+.sc-lbl {
+  color: var(--color-text-secondary);
+}
+
+.badge {
+  display: inline-block;
+  padding: 2px 7px;
+  border-radius: 8px;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.b-d {
+  background: #FAEEDA;
+  color: #854F0B;
+}
+
+.b-c {
+  background: #E6F1FB;
+  color: #185FA5;
+}
+
+.b-a {
+  background: #FCEBEB;
+  color: #A32D2D;
+}
+
+.b-ok {
+  background: #EAF3DE;
+  color: #3B6D11;
+}
+
+.fo {
+  color: var(--color-text-secondary);
+  font-size: 11px;
+}
+
+.fe {
+  color: #E24B4A;
+  font-weight: 500;
+  font-size: 11px;
+}
+
+.chev {
+  display: inline-block;
+  transition: transform .2s;
+  color: var(--color-text-secondary);
+  font-size: 11px;
+  margin-right: 3px;
+}
+
+.chev.op {
+  transform: rotate(90deg);
+}
