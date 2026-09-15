@@ -22,6 +22,7 @@ const sohRoutes         = require('../routes/soh');
 const otaRoutes         = require('../routes/ota');
 const webhookRoutes     = require('../routes/webhook');   // EMQX webhook
 const sseRoutes         = require('../routes/sse');        // Server-Sent Events
+const authSwitchRoutes  = require('../routes/authSwitch');
 
 // The original monolithic routes typically had paths starting from the root of the router.
 // Example: router.post("/signup", ...), router.get("/getdata", ...)
@@ -140,8 +141,15 @@ router.get('/replace/vehicleparts/:chassisNumber/:partId', (req, res, next) => {
   partsRoutes(req, res, next);
 });
 
-// SwitchData — removed (testing-only MQTT topics no longer used)
-// router.use('/switchData', switchDataRoutes);
+// SwitchData — mapped to authSwitch routes for frontend
+router.use('/getinput', (req, res, next) => {
+  req.url = '/';
+  authSwitchRoutes(req, res, next);
+});
+router.use('/postinput', (req, res, next) => {
+  req.url = '/';
+  authSwitchRoutes(req, res, next);
+});
 
 // FaultCodes
 // Old routes: /faultcode
